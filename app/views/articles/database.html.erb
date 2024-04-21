@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Error Tracker Database</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Error Tracker Database</h1>
+<a href="/articles/index.html">
+    <button>Logout</button>
+</a>
+<br><br>
+<!--forms are WIP, needs somewhere to send database info. May need to rewrite-->
+<form action="">
+    <label for="tableName">Table Name:</label>
+    <input type="text" id="tableName" name="tableName"><br>
+    <fieldset>
+        <legend>New Error:</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="priority">Priority:</label>
+    <select id="priority" name="priority">
+        <option value="critical">Critical</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+    </select>
+    <label for="desc">Description:</label>
+    <input type="text" id="desc" name="desc">
+    <label for="person">Person Assigned:</label>
+    <input type="text" id="person" name="person">
+    <label for="dateFound">Date Found:</label>
+    <input type="text" id="dateFound" name="dateFound">
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+<br><br>
+<form action="">
+    <label for="openTable">Open Table:</label>
+    <input type="text" id="openTable" name="openTable"><br>
+    <input type="submit" value="Open">
+</form>
+<br><br>
+<form action="">
+    <label for="deleteKey">Key:</label>
+    <input type="text" id="deleteKey" name="deleteKey">
+    <input type="submit" value="Delete Error">
+</form>
+<br>
+<button type="button">DELETE ALL!</button><!--Will trigger a popup asking for confirmation-->
+<br><br>
+<button type="button">Download CSV</button><!--Will download a csv of the users database-->
+<br><br>
+<form action="">
+    <label for="sort">Sort By:</label>
+    <select id="sort" name="sort">
+        <option value="key">Key</option>
+        <option value="name">Alphabetical Name</option>
+        <option value="person">Alphabetical Assigned Person</option>
+        <option value="date">Date Found</option>
+        <option value="solved">Solved</option>
+    </select>
+    <input type="submit" value="Sort">
+</form>
+<!--placeholder style to make table look decent before css is made-->
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+</style>
+<!--table serves as a sort of visual placeholder until database integration-->
+<table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Priority</th>
+        <th>Description</th>
+        <th>Person Assinged</th>
+        <th>Date Found</th>
+        <th>Solved</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Name1</td>
+        <td>High</td>
+        <td>Placeholder</td>
+        <td>Person1</td>
+        <td>4/20/2024</td>
+        <td>Solved</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Name2</td>
+        <td>High</td>
+        <td>Not real</td>
+        <td>Person2</td>
+        <td>4/20/2024</td>
+        <td>Solved</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>3</td>
+        <td>Name3</td>
+        <td>High</td>
+        <td>Database</td>
+        <td>Person3</td>
+        <td>4/20/2024</td>
+        <td>Solved</td>
+      </tr>
+    </tfoot>
+</table>
+</body>
+</html>
