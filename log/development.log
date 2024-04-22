@@ -6511,3 +6511,439 @@ Processing by ArticlesController#database as HTML
 Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1615)
 
 
+Started GET "/" for 127.0.0.1 at 2024-04-21 21:45:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 124.3ms | Allocations: 95556)
+Completed 200 OK in 136ms (Views: 128.7ms | ActiveRecord: 0.0ms | Allocations: 103253)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 21:45:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 21:46:08 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.2ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1511)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1760)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 21:46:11 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1314)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1559)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 21:46:13 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1311)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1555)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 21:46:13 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1311)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1556)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 21:46:14 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1302)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1547)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 21:46:14 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1308)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 21:46:14 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1320)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1564)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?tableName=&name=&priority=critical&desc=&person=&dateFound=" for 127.0.0.1 at 2024-04-21 21:46:19 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"tableName"=>"", "name"=>"", "priority"=>"critical", "desc"=>"", "person"=>"", "dateFound"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1305)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1549)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?tableName=&name=&priority=critical&desc=&person=&dateFound=" for 127.0.0.1 at 2024-04-21 21:46:19 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"tableName"=>"", "name"=>"", "priority"=>"critical", "desc"=>"", "person"=>"", "dateFound"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1305)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1549)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?tableName=&name=&priority=critical&desc=&person=&dateFound=" for 127.0.0.1 at 2024-04-21 21:46:20 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"tableName"=>"", "name"=>"", "priority"=>"critical", "desc"=>"", "person"=>"", "dateFound"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1296)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1542)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 21:46:29 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1305)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1553)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:46:31 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1431)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1675)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 21:46:31 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1308)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 21:46:33 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1311)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1556)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:46:33 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1320)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1564)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:46:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 21:46:34 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1305)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1548)
+
+
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 21:46:35 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1291)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1534)
+
+
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:47:17 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.1ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 14567)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 15279)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:47:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:47:37 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1296)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1540)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:47:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 21:47:38 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1449)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1753)
+
+
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 21:47:38 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.2ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1495)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1738)
+
+
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:47:52 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.1ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 14572)
+Completed 200 OK in 4ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 15281)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:47:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:47:53 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1302)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1546)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:47:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:47:54 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1299)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1543)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:47:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:48:03 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1311)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1555)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:48:15 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.1ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 14559)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 15269)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1311)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1555)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1320)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1564)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1323)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1308)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 21:48:17 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1308)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1553)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 21:48:20 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.3ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1524)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1768)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 21:48:22 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1418)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1722)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
