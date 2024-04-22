@@ -6947,3 +6947,171 @@ Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 21:48:22 -0400
   
 ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
   
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (42.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-04-22 02:08:06.602424', '2024-04-22 02:08:06.602426') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20240422020758)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240422020758') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-04-21 22:09:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 34156)
+Completed 200 OK in 42ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 39350)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:09:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 22:09:10 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.4ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1533)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1788)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 22:09:11 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1303)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1558)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 22:09:12 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1333)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1585)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?tableName=&name=&priority=critical&desc=&person=&dateFound=" for 127.0.0.1 at 2024-04-21 22:09:13 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"tableName"=>"", "name"=>"", "priority"=>"critical", "desc"=>"", "person"=>"", "dateFound"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1321)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1573)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 22:09:14 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1315)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 22:09:15 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1309)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1560)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 22:09:16 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1318)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1570)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?openTable=" for 127.0.0.1 at 2024-04-21 22:09:22 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"openTable"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1318)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1570)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html?deleteKey=" for 127.0.0.1 at 2024-04-21 22:09:25 -0400
+Processing by ArticlesController#database as HTML
+  Parameters: {"deleteKey"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1312)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1564)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 22:09:28 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1312)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1563)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:09:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

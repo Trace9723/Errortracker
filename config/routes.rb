@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   #makes http://localhost:3000 open to index.html.erb
   root "articles#index"
 
