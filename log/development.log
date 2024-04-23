@@ -7115,3 +7115,512 @@ DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rail
   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+Started GET "/users/sign_up" for 127.0.0.1 at 2024-04-21 22:42:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 235)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 528)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 210.7ms | Allocations: 4208)
+  Rendered layout layouts/application.html.erb (Duration: 227.1ms | Allocations: 37003)
+Completed 200 OK in 435ms (Views: 229.7ms | ActiveRecord: 1.8ms | Allocations: 56212)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-04-21 22:42:19 -0400
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"Trace9723@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "trace9723@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "trace9723@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2024-04-22 02:42:19.300054"], ["updated_at", "2024-04-22 02:42:19.300054"]]
+  [1m[36mTRANSACTION (866.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 1021ms (ActiveRecord: 866.8ms | Allocations: 14601)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-21 22:42:20 -0400
+Processing by ArticlesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1535)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 2306)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:42:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 22:42:39 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1553)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1808)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:42:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:42:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2024-04-21 22:42:43 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1946)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-21 22:42:43 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1347)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1602)
+
+
+Started GET "/users/styles.css" for 127.0.0.1 at 2024-04-21 22:42:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:42:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:42:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:43:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:43:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:43:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:43:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:43:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:44:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:44:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:44:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:44:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:44:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/user/sign_in" for 127.0.0.1 at 2024-04-21 22:44:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-04-21 22:44:24 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 1684)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-21 22:44:25 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1377)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1628)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:44:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 22:44:33 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1335)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1589)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:44:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:44:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 22:45:05 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1449)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1701)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:45:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:45:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2024-04-21 22:45:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 22:45:38 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1341)
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1593)
+
+
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-21 22:45:42 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1341)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1592)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:45:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-21 22:45:43 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1329)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1580)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:45:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-21 22:45:44 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1347)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1599)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:45:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:45:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-21 22:45:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/users/" for 127.0.0.1 at 2024-04-21 22:45:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-04-21 22:45:58 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1557)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-21 22:45:58 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1368)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1619)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-21 22:45:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/thanatos/errortracker/Errortracker/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-04-22 21:27:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 98.1ms | Allocations: 32621)
+Completed 200 OK in 439ms (Views: 130.1ms | ActiveRecord: 0.0ms | Allocations: 36992)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-22 21:27:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-22 21:27:27 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.2ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1540)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1795)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:27:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-22 21:27:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/accountCreation.html" for 127.0.0.1 at 2024-04-22 21:27:30 -0400
+Processing by ArticlesController#accountCreation as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/accountCreation.html.erb within layouts/application
+  Rendered articles/accountCreation.html.erb within layouts/application (Duration: 0.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1424)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1676)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:27:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-22 21:27:31 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1316)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1569)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:27:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-22 21:27:32 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1307)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1560)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:27:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-22 21:27:34 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1331)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1583)
+
+
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-22 21:32:52 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1323)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1573)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:32:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-04-22 21:33:04 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-04-22 21:33:08 -0400
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 590)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4084.0ms | Allocations: 3481)
+  Rendered layout layouts/application.html.erb (Duration: 4085.0ms | Allocations: 4813)
+Completed 200 OK in 5983ms (Views: 4579.9ms | ActiveRecord: 1.2ms | Allocations: 19524)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 115)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 874)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1989)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2597)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-04-22 21:33:24 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"Trace9723@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Started GET "/users/password/new" for 127.0.0.1 at 2024-04-22 21:33:26 -0400
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-04-22 21:33:28 -0400
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "trace9723@gmail.com"], ["LIMIT", 1]]
+Processing by Devise::PasswordsController#new as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2024-04-23 01:33:34.749668"], ["updated_at", "2024-04-23 01:33:34.750043"], ["id", 1]]
+  [1m[36mTRANSACTION (4074.9ms)[0m  [1m[36mcommit transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 293)
+Redirected to http://localhost:3000/
+Processing by Devise::SessionsController#create as HTML
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 125)
+Completed 303 See Other in 14722ms (ActiveRecord: 4075.8ms | Allocations: 17572)
+
+
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"Trace9723@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2335)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "trace9723@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 143ms (ActiveRecord: 0.0ms | Allocations: 3068)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-22 21:33:38 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 432.7ms | Allocations: 8795)
+Completed 200 OK in 4512ms (Views: 434.8ms | ActiveRecord: 0.0ms | Allocations: 15240)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 284.7ms | Allocations: 1996)
+Completed 200 OK in 285ms (Views: 285.3ms | ActiveRecord: 0.0ms | Allocations: 2478)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-22 21:33:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-22 21:33:43 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1351)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1603)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:33:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-22 21:33:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-04-22 21:33:45 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1651)
+
+
+Started GET "/articles/index.html" for 127.0.0.1 at 2024-04-22 21:33:46 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1372)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1623)
+
+
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-22 21:33:47 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1360)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1611)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:33:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-22 21:33:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles/database.html" for 127.0.0.1 at 2024-04-22 21:33:49 -0400
+Processing by ArticlesController#database as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/database.html.erb within layouts/application
+  Rendered articles/database.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1351)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1603)
+
+
+Started GET "/articles/styles.css" for 127.0.0.1 at 2024-04-22 21:33:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles/styles.css"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-04-22 21:33:56 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 1563)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-22 21:33:56 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1353)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1604)
+
+
+Started GET "/styles.css" for 127.0.0.1 at 2024-04-22 21:33:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
