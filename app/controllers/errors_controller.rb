@@ -77,3 +77,18 @@ class ErrorsController < ApplicationController
       params.require(:error).permit(:name, :priority, :description, :person_assigned, :date_found, :progress, :user_id)
     end
 end
+
+require 'csv'
+
+  def index
+    @errors = Error.all
+    respond_to do |format|
+      format.html
+      format.csv do
+        filename = ['Errors', Date.today].join(' ')
+        response.headers['Content-Type'] = 'text/csv'
+        response.headers['Content-Disposition'] = "attachment; filename=#{filename}.csv"
+        render template: 'errors/index'
+      end
+    end
+  end
