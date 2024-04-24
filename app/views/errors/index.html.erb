@@ -13,6 +13,8 @@
       </tr>
     </thead>
 
+<%= link_to 'Download as CSV', errors_path(format:  :csv) %>
+
     <tbody>
       <% @errors.each do |error| %>
         <% if error.user == current_user %>
