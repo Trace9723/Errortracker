@@ -1,0 +1,5 @@
+<%- headers = ['Name', 'Priority', 'Description', 'Person Assigned', 'Date Found', 'Progression'] -%>
+<%= CSV.generate_line headers %>
+<%- @errors.each do |error| -%>
+  <%= CSV.generate_line([error.name, error.priority, error.description, error.person_assigned, error.date_found, error.progress]) -%>
+<%- end -%>

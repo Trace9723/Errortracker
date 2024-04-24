@@ -1,0 +1,48 @@
+<%= form_with(model: error) do |form| %>
+  <% if error.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(error.errors.count, "error") %> prohibited this error from being saved:</h2>
+
+      <ul>
+        <% error.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    
+    <%= form.text_field :name, class:"form-control", placeholder:"Error Name" %>
+  </div>
+
+  <div class="form-group">
+    
+    <%= form.text_field :priority, class:"form-control", placeholder:"Priority level" %>
+  </div>
+
+  <div class="form-group">
+    
+    <%= form.text_area :description, class:"form-control", placeholder:"Description of Error" %>
+  </div>
+
+  <div class="form-group">
+    
+    <%= form.text_field :person_assigned, class:"form-control", placeholder:"Error Handler" %>
+  </div>
+
+  <div class="form-group">
+  
+    <%= form.date_field :date_found, class:"form-control", placeholder:"Date found" %>
+  </div>
+
+  <div class="form-group">
+  
+    <%= form.text_field :progress, class:"form-control", placeholder:"Error Progression" %>
+  </div>
+  
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
