@@ -12,8 +12,9 @@
 </p>
   <body>   
     <p> You must have an account to use this tinytool. You can sign up using the nav bar above.
-        If you don't know what to do, click "Help" up above.
+        If you don't know what to do, click "Help" up above. If you are already signed in, go to the error list.
     </p>
     <%= button_to "Sign In", new_user_session_path, class:"nav-link" %>
+    <%= link_to "Error List", errors_path, class:"nav-link" %>
   </body>
 </center>
