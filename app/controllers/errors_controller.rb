@@ -1,5 +1,7 @@
 class ErrorsController < ApplicationController
   before_action :set_error, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except:[:index]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /errors or /errors.json
   def index
@@ -13,6 +15,7 @@ class ErrorsController < ApplicationController
   # GET /errors/new
   def new
     @error = Error.new
+    #@error = current_user.errors.build
   end
 
   # GET /errors/1/edit
@@ -22,6 +25,7 @@ class ErrorsController < ApplicationController
   # POST /errors or /errors.json
   def create
     @error = Error.new(error_params)
+    #@error = current_user.errors.build(error_params)
 
     respond_to do |format|
       if @error.save
@@ -57,6 +61,11 @@ class ErrorsController < ApplicationController
     end
   end
 
+  def correct_user
+    @error = current_user.errors.find_by(id: params[:id])
+    redirect_to errors_path, notice: "Not Authorized to Edit This Error" if @error.nil?
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_error
@@ -65,6 +74,6 @@ class ErrorsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def error_params
-      params.require(:error).permit(:name, :priority, :description, :person_assigned, :date_found)
+      params.require(:error).permit(:name, :priority, :description, :person_assigned, :date_found, :progress, :user_id)
     end
 end
