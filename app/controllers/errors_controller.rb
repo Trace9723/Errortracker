@@ -15,7 +15,7 @@ class ErrorsController < ApplicationController
   # GET /errors/new
   def new
     @error = Error.new
-    #@error = current_user.errors.build
+    @error = current_user.error.build
   end
 
   # GET /errors/1/edit
@@ -25,7 +25,7 @@ class ErrorsController < ApplicationController
   # POST /errors or /errors.json
   def create
     @error = Error.new(error_params)
-    #@error = current_user.errors.build(error_params)
+    @error = current_user.error.build(error_params)
 
     respond_to do |format|
       if @error.save
@@ -62,7 +62,7 @@ class ErrorsController < ApplicationController
   end
 
   def correct_user
-    @error = current_user.errors.find_by(id: params[:id])
+    @error = current_user.error.find_by(id: params[:id])
     redirect_to errors_path, notice: "Not Authorized to Edit This Error" if @error.nil?
   end
 
