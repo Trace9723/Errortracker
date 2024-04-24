@@ -5,7 +5,7 @@ class ErrorsController < ApplicationController
 
   # GET /errors or /errors.json
   def index
-    @errors = Error.all
+    @errors = Error.order(params[:sort])
   end
 
   # GET /errors/1 or /errors/1.json
