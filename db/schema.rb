@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.1].define(version: 2024_04_24_004831) do
   create_table "errors", force: :cascade do |t|
     t.string "name"
-    t.integer "priority"
+    t.string "priority"
     t.text "description"
     t.string "person_assigned"
     t.date "date_found"
