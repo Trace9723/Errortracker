@@ -1,0 +1,10 @@
+<h1>Editing error</h1>
+<br>
+<%= render "form", error: @error %>
+
+<br>
+
+<div>
+  <%= link_to "Show error", @error, class:"btn btn-primary" %> |
+  <%= link_to "Back", errors_path, class:"btn btn-dark" %>
+</div>

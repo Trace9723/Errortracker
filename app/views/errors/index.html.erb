@@ -1,0 +1,32 @@
+
+<h1>Error List</h1>
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Name</th>
+        <th>Priortiy</th>
+        <th>Description</th>
+        <th>Person assigned</th>
+        <th>Date found</th>
+        <th>Progression</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @errors.each do |error| %>
+        <tr>
+          <td><%= link_to error.name, error %></td>
+          <td><%= error.priority %></td>
+          <td><%= error.description %></td>
+          <td><%= error.person_assigned %></td>
+          <td><%= error.date_found %></td>
+          <td><%= error.progress %></td>
+          <td><%= link_to 'Delete', error, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+        
+
+<%= link_to "New error", new_error_path, class:"btn btn-primary" %>
