@@ -1,33 +1,37 @@
+
+<h1>Error List</h1>
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th><u><%= link_to "Name", :sort => "name"%> </u></th>
+        <th><u> <%= link_to "Priority", :sort => "priority"%></u></th>
+        <th><u>Description</u></th>
+        <th><u><%= link_to "Person Assigned", :sort => "person_assigned"%></u></th>
+        <th><u><%= link_to "Date Found", :sort => "date_found"%></u></th>
+        <th><u><%= link_to "Progression", :sort => "progress"%></u></th>
+        <th><u>Delete</u></th>
+      </tr>
+    </thead>
+
+<%= link_to 'Download as CSV', errors_path(format:  :csv) %>
+
+    <tbody>
+      <% @errors.each do |error| %>
+        <% if error.user == current_user %>
+          <tr>
+            <td><%= link_to error.name, error %></td>
+            <td><%= error.priority %></td>
+            <td><%= error.description %></td>
+            <td><%= error.person_assigned %></td>
+            <td><%= error.date_found %></td>
+            <td><%= error.progress %></td>
+            <td><%= button_to 'Delete', error,method: :delete, class: "btn btn-outline-danger btn-sm" %></td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+        
 <center>
-  <header>
-    <h1>Error Tracker</h1>
-    <h2>Made by: Andre Buclay, Jack Clarke, Christian Gauthier, and Jay Gott</h2>
-    <hr>
-  </header>
-<br>
-<h3>A Simple Error Tracking Solution In Your Browser</h3>
-<p>Error Tracker is a tiny tool that allows users to create their own error tracking database.
-     Add, edit, and delete your errors all in browser. Users define their own errors,
-      so Error Tracker is an effective tool for anyone, no matter what kind of errors they’re tracking.
-</p>
-  <body>   
-    <p> You must have an account to use this tinytool. You can sign up using the nav bar above.
-        If you don't know what to do, click "Help" up above. If you are already signed in, go to the error list.
-    </p>
-    <% if user_signed_in? %>
-      <p> You are now logged in! Press the link below to continue!</p>
-      <%= link_to "Error List", errors_path, class:"nav-link" %>
-    <% else %>
-      <div>
-        <p> New user? Click below to sign up!
-      <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
-        </p>
-      </div>
-      <div>
-        <p> Existing users can log in using this link instead!
-      <%= link_to "Sign In", new_user_session_path, class:"nav-link" %>
-        </p>
-      </div>
-    <% end %>
-  </body>
+<%= link_to "New error", new_error_path, class:"btn btn-primary" %>
 </center>
