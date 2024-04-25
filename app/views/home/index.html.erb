@@ -15,9 +15,19 @@
         If you don't know what to do, click "Help" up above. If you are already signed in, go to the error list.
     </p>
     <% if user_signed_in? %>
+      <p> You are now logged in! Press the link below to continue!</p>
       <%= link_to "Error List", errors_path, class:"nav-link" %>
     <% else %>
-      <%= button_to "Sign In", new_user_session_path, class:"nav-link" %>
+      <div>
+        <p> New user? Click below to sign up!
+      <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
+        </p>
+      </div>
+      <div>
+        <p> Existing users can log in using this link instead!
+      <%= link_to "Sign In", new_user_session_path, class:"nav-link" %>
+        </p>
+      </div>
     <% end %>
   </body>
 </center>
