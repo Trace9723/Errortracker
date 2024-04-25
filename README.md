@@ -1,24 +1,12 @@
 # README
+These are the required versions of the programs necessary to run the Errortracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 3.2.3 
+SQLite3
+Bootstrap
+Yarn
+Node.js
 
-Things you may want to cover:
+When you pull enter command rails db:migrate 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To load your environment enter command rails db:migrate
